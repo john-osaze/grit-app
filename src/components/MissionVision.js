@@ -7,8 +7,8 @@ import Mission2 from "../images/gallery/mayor-2.jpg"
 
 const MissionVision = () => {
     return (
-        <section className="mayor-section">
-            <Container>
+        <section className="mayor-section mb-5">
+            <Container className="mb-5">
                 <Row>
                     <Col lg={6}>
                         <div className="mayor-box">

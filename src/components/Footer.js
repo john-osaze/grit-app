@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Logo from "../images/logo-light.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -18,10 +19,10 @@ export default function Footer() {
                                 <p>Grit Procurement Solutions helps you see what your government is up to.</p>
                             </div>
                             <div className="footer-widget-socials">
-                                <a href="/"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
-                                <a href="/"><FontAwesomeIcon icon={['fab', 'facebook']} /></a>
-                                <a href="/"><FontAwesomeIcon icon={['fab', 'linkedin-in']} /></a>
-                                <a href="/"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
+                                <Link to="/"><FontAwesomeIcon icon={['fab', 'twitter']} /></Link>
+                                <Link to="/"><FontAwesomeIcon icon={['fab', 'facebook']} /></Link>
+                                <Link to="/"><FontAwesomeIcon icon={['fab', 'linkedin-in']} /></Link>
+                                <Link to="/"><FontAwesomeIcon icon={['fab', 'instagram']} /></Link>
                             </div>
                         </Col>
                         <Col lg={3}>
@@ -29,11 +30,11 @@ export default function Footer() {
                                 <div className="footer-widget-explore">
                                     <h4 className="footer-widget-title">Explore</h4>
                                     <ul className="list-unstyled">
-                                        <li><a href="department-details">Administration</a></li>
-                                        <li><a href="service-details">Fire Services</a></li>
-                                        <li><a href="event-details">Business & Taxation</a></li>
-                                        <li><a href="team-details">Circular’s And Go’s</a></li>
-                                        <li><a href="contact">Contact Us</a></li>
+                                        <li><Link to="/">Administration</Link></li>
+                                        <li><Link to="/">Fire Services</Link></li>
+                                        <li><Link to="/">Business & Taxation</Link></li>
+                                        <li><Link to="/">Circular’s And Go’s</Link></li>
+                                        <li><Link to="/">Contact Us</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -43,11 +44,11 @@ export default function Footer() {
                                 <div className="footer-widget-department">
                                     <h4 className="footer-widget-title">Departments</h4>
                                     <ul className="list-unstyled">
-                                        <li><a href="department-details">Health & Safety</a></li>
-                                        <li><a href="department-details">Housing & Land</a></li>
-                                        <li><a href="department-details">Legal & Finance</a></li>
-                                        <li><a href="department-details">Transport & Traffic</a></li>
-                                        <li><a href="department-details">Arts & Culture</a></li>
+                                        <li><Link to="/">Health & Safety</Link></li>
+                                        <li><Link to="/">Housing & Land</Link></li>
+                                        <li><Link to="/">Legal & Finance</Link></li>
+                                        <li><Link to="/">Transport & Traffic</Link></li>
+                                        <li><Link to="/">Arts & Culture</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -61,7 +62,7 @@ export default function Footer() {
                                 <div className="footer-widget-contact-list">
                                     <FontAwesomeIcon icon="envelope"/>
                                     <div className="footer-widget-contact-item">
-                                        <a href="mailto:needhelp@gritapp.com">needhelp@gritapp.com</a>
+                                        <a href="mailto:needhelp@gritapp.org">needhelp@gritapp.org</a>
                                     </div>
                                 </div>
                                 <div className="footer-widget-contact-list">

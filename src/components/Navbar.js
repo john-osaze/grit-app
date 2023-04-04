@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from "../images/logo.png"
+import { Link } from 'react-router-dom'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Navbar = () => {
@@ -10,20 +11,19 @@ const Navbar = () => {
 					<div className="main-menu-inner">
 						<div className="main-menu-left">
 							<div className="main-menu-logo">
-								<a href="index-2"><img src={Logo} alt="logo" width="140" /></a>
+								<Link href="index-2"><img src={Logo} alt="logo" width="140" /></Link>
 							</div>
 							<div className="navigation">
 								<ul className="main-menu-list list-unstyled">
 									<li className="active">
-										<a href="/">Home</a>
+										<Link to="/">Home</Link>
 									</li>
-									<li><a href="about">About</a></li>
-									<li><a href="about">Applications</a></li>
-									<li><a href="about">Trainings</a></li>
-									<li><a href="faqs">FAQs</a></li>
-									<li><a href="petitions">Petitions</a></li>
-									<li><a href="contact">Contact</a>
-									</li>
+									<li><Link to="/">About</Link></li>
+									<li><Link to="/">Applications</Link></li>
+									<li><Link to="/">Trainings</Link></li>
+									<li><Link to="/faqs">FAQs</Link></li>
+									<li><Link to="/petitions">Petitions</Link></li>
+									<li><Link to="/contact">Contact</Link></li>
 								</ul>
 							</div>
 						</div>
@@ -39,7 +39,7 @@ const Navbar = () => {
 								</a>
 							</div>
 							<div className="main-menu-right-button">
-								<a href="login" className="btn btn-primary">Login to OCP</a>
+								<Link to="/login" className="btn btn-primary">Login to OCP</Link>
 							</div>
 						</div>
 					</div>

@@ -20,5 +20,5 @@
 	--thm-light-bg-rgb: 243, 246, 247;
 	--thm-font: "Manrope",sans-serif;
 	--thm-special-font: "reeyregular", sans-serif;
-	scroll-behavior: auto;
+	scroll-behavior: smooth;
 }

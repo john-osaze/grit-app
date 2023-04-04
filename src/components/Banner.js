@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 
 const Banner = () => {
     return (
-        <section className="main-slider">
+        <section className="main-slider top-page-content">
             <div className="main-slider-swiper">
                 <div className="item">
                     <div className="item-slider-bg"></div>

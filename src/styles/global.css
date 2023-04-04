@@ -11,9 +11,9 @@ body{
 	border: none;
 	overflow-x: hidden !important;
 }
-/* body.locked {
+body.locked {
 	overflow: hidden;
-} */
+}
 h1,h2,h3,h4,h5,h6 {
 	font-weight: 800;
 	color: var(--thm-black);
@@ -144,4 +144,8 @@ a{
 .scroll-to-top:hover {
 	background-color: var(--thm-black);
 	color: #fff;
+}
+.top-page-content {
+	position: relative;
+	top: 100px;
 }

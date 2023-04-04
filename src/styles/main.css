@@ -59,6 +59,10 @@
 	margin-bottom: 0;
 }
 
+.faq-list, .petition-form{
+	margin-top: 150px;
+}
+
 /***********************
 * Topbar
 ***********************/
@@ -243,18 +247,18 @@
 /***********************
 * Header
 ***********************/
-.sticky-header--cloned {
+.sticky-header{
 	position: fixed;
 	z-index: 991;
 	top: 0;
 	left: 0;
 	background-color: var(--thm-white);
 	width: 100%;
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transform: translateY(-120%);
+	visibility: visible;
+	opacity: 1;
+	/* -webkit-transform: translateY(-120%);
 	transform: translateY(-120%);
-	box-shadow: 0px 10px 40px 0px rgb(0 0 0 / 15%);
+	box-shadow: 0px 10px 40px 0px rgb(0 0 0 / 15%); */
 }
 
 @media (max-width: 1199px) {
@@ -263,7 +267,7 @@
 	}
 }
 
-.sticky-header--cloned.sticky-fixed {
+.sticky-header.sticky-fixed {
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 	opacity: 1;
@@ -673,9 +677,6 @@ a.search-toggler {
 /***********************
 * Slider
 ***********************/
-.main-slider {
-	position: relative;
-}
 
 .main-slider-swiper .item {
 	background-size: cover;
@@ -2310,6 +2311,7 @@ a.search-toggler {
 .service-two-section {
 	position: relative;
 	padding: 120px 0;
+	padding-bottom: 0;
 }
 
 .service-two-section:before {
@@ -5531,142 +5533,71 @@ a.search-toggler {
 }
 
 /***********************
-* Causes
+* training
 ***********************/
-.causes-section {
+.training-section {
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
 
 @media(max-width: 1199px) {
-	.causes-section {
+	.training-section {
 		padding: 70px 0px;
 	}
 }
 
 @media(max-width: 991px) {
-	.causes-card-imgbox img {
+	.training-card-imgbox img {
 		width: 100%;
 	}
 }
 
-.causes-content {
-	padding: 0 40px 40px;
+.training-content {
+	padding: 10px 40px 40px;
 	background-color: var(--thm-white);
 	box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
 }
 
-.causes-card-funding {
-	position: relative;
-	padding: 15px 20px;
-	background-color: #fff;
-	box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
-	margin-top: -32px;
-}
-
-.causes-card-progressbar {
-	position: relative;
-	margin-bottom: 10px;
-	height: 6px;
-	background-color: var(--thm-light-bg);
-}
-
-.causes-card-progressbar-inner {
-	background-color: var(--thm-primary);
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 0;
-	transition: all 1000ms ease;
-}
-
-.causes-card-progressbar-text {
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 26px;
-	width: 26px;
-	background-color: var(--thm-primary);
-	color: #fff;
-	font-size: 9px;
-	font-weight: 900;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	transform: translate(50%, calc(-50% + 2px));
-}
-
-.causes-card-funding-list {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-@media(max-width: 575px) {
-	.causes-card-funding-list {
-		flex-wrap: wrap;
-	}
-}
-
-.causes-card-funding-item {
-	display: flex;
-	align-items: center;
-	font-size: 14px;
-}
-
-.causes-card-funding-amount {
-	color: var(--thm-black);
-	font-weight: 700;
-}
-
-.causes-card-funding-text {
-	margin-left: 5px;
-	font-size: 14px;
-	font-weight: 600;
-}
-
-.causes-content h4 {
+.training-content h4 {
 	margin-top: 25px;
 	margin-bottom: 13px;
 }
 
-.causes-content h4>a {
+.training-content h4>a {
 	color: inherit;
 	transition: all 500ms ease;
 }
 
-.causes-content h4>a:hover {
+.training-content h4>a:hover {
 	color: var(--thm-primary);
 }
 
-.causes-content p {
+.training-content p {
 	margin-bottom: 10px;
 }
 
-.causes-content .btn-primary {
+.training-content .btn-primary {
 	padding: 11px 27px;
 	font-size: 13px;
 	font-weight: 600;
 }
 
-.causes-details-section {
+.training-details-section {
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
 
 @media(max-width: 1199px) {
-	.causes-details-section {
+	.training-details-section {
 		padding: 70px 0px;
 	}
 }
 
-.causes-details-content-box {
+.training-details-content-box {
 	margin-bottom: 50px;
 }
 
-.causes-details-funding {
+.training-details-funding {
 	position: relative;
 	padding: 20px 20px 12px 20px;
 	background-color: #fff;
@@ -5677,14 +5608,14 @@ a.search-toggler {
 	margin-bottom: 20px;
 }
 
-.causes-details-progressbar {
+.training-details-progressbar {
 	position: relative;
 	margin-bottom: 10px;
 	height: 6px;
 	background-color: var(--thm-light-bg);
 }
 
-.causes-details-progressbar-inner {
+.training-details-progressbar-inner {
 	background-color: var(--thm-primary);
 	position: absolute;
 	top: 0;
@@ -5694,7 +5625,7 @@ a.search-toggler {
 	transition: all 1000ms ease;
 }
 
-.causes-details-progressbar-text {
+.training-details-progressbar-text {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -5711,60 +5642,60 @@ a.search-toggler {
 	transform: translate(50%, calc(-50% + 2px));
 }
 
-.causes-details-funding-list {
+.training-details-funding-list {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.causes-details-funding-item {
+.training-details-funding-item {
 	display: flex;
 	align-items: center;
 	font-size: 14px;
 }
 
-.causes-details-funding-amount {
+.training-details-funding-amount {
 	color: var(--thm-black);
 	font-weight: 700;
 }
 
-.causes-details-funding-text {
+.training-details-funding-text {
 	margin-left: 5px;
 }
 
-.causes-details-imgbox {
+.training-details-imgbox {
 	margin-bottom: 40px;
 }
 
 @media(max-width: 991px) {
-	.causes-details-img img {
+	.training-details-img img {
 		width: 100%;
 	}
 }
 
-.causes-details-content-box h4 {
+.training-details-content-box h4 {
 	font-size: 34px;
 }
 
-.causes-details-summary-box {
+.training-details-summary-box {
 	margin-bottom: 45px;
 }
 
-.causes-details-summary-box h3 {
+.training-details-summary-box h3 {
 	font-size: 34px;
 	margin-bottom: 20px;
 }
 
-.causes-details-text p {
+.training-details-text p {
 	margin-top: 30px;
 	margin-bottom: 53px;
 }
 
-.causes-details-button {
+.training-details-button {
 	display: inline-block;
 }
 
-.causes-details-button .btn-primary {
+.training-details-button .btn-primary {
 	padding: 18px 49px;
 }
 

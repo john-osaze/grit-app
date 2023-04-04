@@ -6,8 +6,8 @@ import About7 from "../images/gallery/about-7.jpg"
 
 export default function About() {
     return (
-        <section className="about-one-section">
-            <Container>
+        <section className="about-one-section mt-5" id="about">
+            <Container className="mt-5">
                 <Row className="row-gutter-y-40">
                     <Col lg={12} xl={6}>
                         <div className="about-one-image">

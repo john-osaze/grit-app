@@ -15,6 +15,7 @@ import Faqs from './views/Faqs';
 
 //Import Components
 import Navbar from './components/Navbar';
+// import Footer from "./components/Footer";
 
 library.add(fab, fas)
 

@@ -9,6 +9,7 @@ import Banner from "../components/Banner"
 import MissionVision from "../components/MissionVision"
 // import Partners from "../components/Partners"
 import Footer from "../components/Footer";
+import Trainings from "../components/Trainings";
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
 				<About />
 				<MissionVision />
 				<Applications />
+				<Trainings/>
 				{/* <Partners /> */}
 				<section className="cta-one">
 					<Container>
