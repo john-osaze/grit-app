@@ -1,5 +1,5 @@
 /***********************
-* Common
+* Global
 ***********************/
 
 body{
@@ -7,12 +7,13 @@ body{
 	font-size: 16px;
 	line-height: 1.5em;
 	font-weight: 500;
-	color: var(--thm-gray) ;
+	color: var(--thm-gray);
 	border: none;
+	overflow-x: hidden !important;
 }
-body.locked {
+/* body.locked {
 	overflow: hidden;
-}
+} */
 h1,h2,h3,h4,h5,h6 {
 	font-weight: 800;
 	color: var(--thm-black);

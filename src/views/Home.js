@@ -26,7 +26,7 @@ const Home = () => {
 							<Col lg={12}>
 								<div className="cta-one-content text-center">
 									<h2 className="section-title text-white">Want to see all government <br/> contract processes?</h2>
-									<a href="contact.html" className="btn btn-primary">Create an account</a>
+									<a href="contact" className="btn btn-primary">Create an account</a>
 								</div>
 							</Col>
 						</Row>
